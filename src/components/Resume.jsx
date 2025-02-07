@@ -24,7 +24,7 @@ const Resume = () => {
         };
     
         window.addEventListener("scroll", handleScroll);
-        handleScroll(); // Initial check on load
+        handleScroll();
     
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
@@ -32,7 +32,7 @@ const Resume = () => {
 
     return (
         <section id="resume" className="resume-section">
-            {/* Sidebar - Now correctly hides when Resume is out of view */}
+            
             {showSidebar && (
                 <div className="resume-sidebar">
                     <ul>
@@ -43,7 +43,7 @@ const Resume = () => {
                 </div>
             )}
 
-            {/* Main Resume Content */}
+           
             <div className="resume-content">
                 <div id="education" className="resume-section-item">
                     <h2>Education</h2>

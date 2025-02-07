@@ -2,18 +2,17 @@
 .navbar {
   padding-left: 20px;
   padding-right: 20px;
-  transition: border 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for border, background, and shadow */
-  background-color: transparent; /* Default background */
+  transition: border 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
+  background-color: transparent; 
 }
 /* When navbar is scrolled */
 .navbar.scrolled {
-  border-bottom: 2px solid white; /* White border when scrolled */
-  background-color: white !important; /* Set background color to white */
-  background: white !important; /* Force background to white, overriding previous gradient */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  border-bottom: 2px solid white;
+  background-color: white !important;
+  background: white !important; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Original styles for navbar */
 .navbar .container {
   display: flex;
   justify-content: space-between;

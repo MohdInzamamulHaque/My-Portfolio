@@ -3,7 +3,7 @@ html {
   }
 
   body {
-    scroll-padding-top: 80px; /* Adjust this to your navbar's height */
+    scroll-padding-top: 80px;
   }
 
   .navbar {
@@ -14,7 +14,6 @@ html {
   z-index: 999;
 }
 
-/* Optional: If you want to be specific */
 .home-section, .about-section {
   margin: 0;
   padding: 0;

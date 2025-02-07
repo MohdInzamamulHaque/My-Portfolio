@@ -4,9 +4,8 @@ import './Navbar.css';
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Detect scroll and toggle class
   const handleScroll = () => {
-    if (window.scrollY > 50) { // You can adjust this value based on when you want the border to appear
+    if (window.scrollY > 50) { 
       setIsScrolled(true);
     } else {
       setIsScrolled(false);

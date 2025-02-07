@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(to right, rgb(235, 239, 255) 50%, white 50%);  /* 50/50 gradient */
+    background: linear-gradient(to right, rgb(235, 239, 255) 50%, white 50%); 
 }
 
 /* Style for the title */

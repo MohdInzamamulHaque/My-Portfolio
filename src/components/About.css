@@ -34,14 +34,14 @@
 
 .about-details {
   display: grid;
-  grid-template-columns: 130px auto; /* Adjust width as needed */
+  grid-template-columns: 130px auto; 
   gap: 10px 20px;
   list-style: none;
   padding: 0;
 }
 
 .about-details li {
-  display: contents; /* Ensures alignment across rows */
+  display: contents; 
 }
 
 /* Counter & Resume Button */
@@ -79,24 +79,24 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px; /* Increases space between items */
+  gap: 30px; 
 }
 
 .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 120px; /* Increases the size */
+  width: 120px; 
 }
 
 .skill img {
-  width: 80px; /* Makes the icons larger */
+  width: 80px; 
   height: 80px;
   object-fit: contain;
 }
 
 .skill h4 {
-  font-size: 18px; /* Slightly larger text */
+  font-size: 18px; 
   color: #333;
   margin-top: 10px;
   text-align: center;

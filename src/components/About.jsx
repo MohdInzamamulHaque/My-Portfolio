@@ -2,7 +2,6 @@ import React from 'react';
 import './About.css';
 import developerImage from '../assets/images/dev.png';
 
-// Importing software skill images
 import reactIcon from '../assets/images/React.png';
 import htmlIcon from '../assets/images/HTML.png';
 import csslIcon from '../assets/images/CSS.png';
@@ -44,7 +43,7 @@ const About = () => {
 
               <div className="counter-wrap">
                 <div className="text">
-                  <p><a href="/Resume.pdf" download="Mohd_Inzamam_Resume.pdf" className="btn btn-primary">Download Resume</a></p>
+                  <p><a href="https://drive.google.com/file/d/1tx_-BWMFJj3PmITysq-QlvM5fQWKt2pj/view?usp=sharing" target="_blank" className="btn btn-primary">Download Resume</a></p>
                 </div>
               </div>
             </div>
