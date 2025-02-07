@@ -1,0 +1,76 @@
+/* Navbar custom styles */
+.navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: border 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for border, background, and shadow */
+  background-color: transparent; /* Default background */
+}
+/* When navbar is scrolled */
+.navbar.scrolled {
+  border-bottom: 2px solid white; /* White border when scrolled */
+  background-color: white !important; /* Set background color to white */
+  background: white !important; /* Force background to white, overriding previous gradient */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Original styles for navbar */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.navbar-toggler {
+  color: black !important;
+  border-color: black !important;
+}
+
+.navbar-toggler .oi-menu {
+  color: black !important;
+}
+
+#ftco-navbar .navbar-nav .nav-link {
+  color: black !important;
+}
+
+#ftco-navbar .navbar-brand {
+  color: black !important;
+}
+
+#ftco-navbar .navbar-nav .nav-link:hover {
+  color: #333 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: black !important;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}

@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    scroll-padding-top: 80px; /* Adjust this to your navbar's height */
+  }
+
+  .navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+/* Optional: If you want to be specific */
+.home-section, .about-section {
+  margin: 0;
+  padding: 0;
+}
+

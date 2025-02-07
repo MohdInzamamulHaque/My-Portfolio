@@ -1,0 +1,51 @@
+/* Ensure the home section covers the full screen */
+.home-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgb(235, 239, 255) 50%, white 50%);  /* 50/50 gradient */
+}
+
+/* Style for the title */
+.home-title {
+    font-size: 40px;
+    color: rgb(62, 100, 255);
+    margin-bottom: 10px;
+}
+
+/* Style for the name */
+.home-name {
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Style for the description */
+.home-description {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.home-im-a {
+    color: black;
+}
+
+.home-react-developer {
+    color: rgb(62, 100, 255);
+}
+
+.typing {
+    display: inline-block;
+    opacity: 0;
+    animation: typing 0.2s forwards;
+  }
+  
+  @keyframes typing {
+    to {
+      opacity: 1;
+    }
+  }
