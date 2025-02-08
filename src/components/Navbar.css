@@ -1,17 +1,18 @@
-/* Navbar custom styles */
+/* Default navbar background with gradient */
 .navbar {
   padding-left: 20px;
   padding-right: 20px;
   transition: border 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
-  background-color: transparent; 
+  background: linear-gradient(to right, rgb(235, 239, 255) 50%, white 50%);
 }
+
 /* When navbar is scrolled */
 .navbar.scrolled {
-  border-bottom: 2px solid white;
-  background-color: white !important;
-  background: white !important; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border-bottom: none; /* Ensure no border appears */
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Softer and more natural shadow */
 }
+
 
 .navbar .container {
   display: flex;
