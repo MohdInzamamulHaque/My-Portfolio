@@ -4,38 +4,32 @@ const AboutAnimation = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries, observer) => {
+        let aboutSectionVisible = false;
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-            observer.unobserve(entry.target); // Stop observing after first appearance
+            aboutSectionVisible = true;
           }
         });
+
+        if (aboutSectionVisible) {
+          document.querySelectorAll('.animate-image, .animate-text').forEach((element) => {
+            element.classList.add('show');
+            observer.unobserve(element);
+          });
+        }
       },
       {
-        threshold: 0.1,
+        threshold: 0.2,
       }
     );
 
-    const animatedElements = document.querySelectorAll(
-      '.animate-image, .animate-text, .animate-skill'
-    );
-
-    animatedElements.forEach((element) => {
-      if (element.getBoundingClientRect().top < window.innerHeight) {
-        element.classList.add('show'); // Make sure it's visible on load
-      } else {
-        observer.observe(element);
-      }
-    });
-
-    // Ensure all text elements are visible initially
-    document.querySelectorAll('.animate-text').forEach((element) => {
-      element.style.opacity = '1';
-      element.style.transform = 'none';
-    });
+    const aboutSection = document.getElementById('about-section');
+    if (aboutSection) {
+      observer.observe(aboutSection);
+    }
 
     return () => {
-      animatedElements.forEach((element) => observer.unobserve(element));
+      observer.disconnect();
     };
   }, []);
 
