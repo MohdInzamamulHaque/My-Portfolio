@@ -7,36 +7,35 @@ import htmlIcon from '../assets/images/HTML.png';
 import csslIcon from '../assets/images/CSS.png';
 import jsIcon from '../assets/images/JS.png';
 import sqlIcon from '../assets/images/SQL.png';
+import AboutAnimation from './AboutAnimation';
 
 const About = () => {
   return (
     <section id="about-section" className="about-section">
+      <AboutAnimation />
       <div className="container">
         <div className="row d-flex no-gutters">
           {/* Left Section - Image */}
-          <div className="col-md-6 col-lg-6 d-flex">
+          <div className="col-md-6 col-lg-6 d-flex animate-image">
             <div className="img-about d-flex align-items-stretch">
               <img 
                 src={developerImage} 
                 alt="Developer" 
-                className="img-fluid"
+                className="img-fluid rounded-image"
               />
             </div>
           </div>
 
           {/* Right Section - About Info */}
-          <div className="col-md-6 col-lg-6 pl-md-5 py-5">
+          <div className="col-md-6 col-lg-6 pl-md-5 py-5 animate-text">
             <div className="about-info">
               <h2 className="mb-4 bold-text">About Me</h2>
-              <p className='faded-text'>
+              <p className='faded-text animate-text'>
               I am a React Developer with a passion for building responsive and efficient web applications. I love turning complex ideas into simple and user-friendly solutions. With a strong foundation in front-end development, I focus on creating seamless user experiences, writing clean and maintainable code, and staying up to date with the latest industry trends. I thrive on problem-solving and enjoy collaborating on innovative projects that push the boundaries of web development.
               </p>
 
               <ul className="about-details mt-4">
                 <li><span className='bold-text'>Name:</span> <span className='faded-text'>Mohd Inzamam</span></li>
-                <li><span className='bold-text'>Date of birth:</span> <span className='faded-text'>July 20, 1998</span></li>
-                <li><span className='bold-text'>Address:</span> <span className='faded-text'>Rahimi Nursing Home, Mominpura, Nagpur, Maharashtra, India</span></li>
-                <li><span className='bold-text'>Zip code:</span> <span className='faded-text'>440018</span></li>
                 <li><span className='bold-text'>Email:</span> <span className='faded-text'>Inzemam700@gmail.com</span></li>
                 <li><span className='bold-text'>Phone:</span> <span className='faded-text'>+91 8530597063</span></li>
               </ul>
@@ -54,23 +53,23 @@ const About = () => {
 <div className="software-skills">
   <h3>Software Skills</h3>
   <div className="skills-icons">
-    <div className="skill">
+    <div className="skill animate-skill">
       <img src={htmlIcon} alt="HTML" />
       <h4>HTML</h4>
     </div>
-    <div className="skill">
+    <div className="skill animate-skill">
       <img src={csslIcon} alt="CSS" />
       <h4>CSS</h4>
     </div>
-    <div className="skill">
+    <div className="skill animate-skill">
       <img src={jsIcon} alt="JavaScript" />
       <h4>JavaScript</h4>
     </div>
-    <div className="skill">
+    <div className="skill animate-skill">
       <img src={sqlIcon} alt="SQL" />
       <h4>SQL</h4>
     </div>
-    <div className="skill">
+    <div className="skill animate-skill">
       <img src={reactIcon} alt="React" />
       <h4>React</h4>
     </div>

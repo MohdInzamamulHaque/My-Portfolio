@@ -48,7 +48,7 @@ const Resume = () => {
                 <div id="education" className="resume-section-item">
                     <h2>Education</h2>
                     <div className="education-list">
-                        <div className="education-item">
+                        <div className="education-item animate-skill">
                             <img src={islamiaIcon} alt="School Logo" className="education-icon" />
                             <div className="education-details">
                                 <h3>Islamia High School</h3>
