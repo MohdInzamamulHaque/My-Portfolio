@@ -12,7 +12,7 @@ const AboutAnimation = () => {
         });
 
         if (aboutSectionVisible) {
-          document.querySelectorAll('.animate-image, .animate-text').forEach((element) => {
+          document.querySelectorAll('.animate-image, .animate-text, .animate-skill').forEach((element) => {
             element.classList.add('show');
             observer.unobserve(element);
           });
